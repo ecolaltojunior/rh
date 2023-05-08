@@ -36,7 +36,7 @@ function avaliar() {
     }
     
     
-            resultado.innerHTML = "<h3>Resultado</h3> <br> Águia: " +aguia*4+ "%" +"<br>Tubarão: " +tubarao*4+"% " + "<br>Gato: " +gato*4 +"%"+ "<br>Lobo: " +lobo*4 +"%" + '<br><img src="imagem1.png" alt="resultados perfil comportamental">'
+            resultado.innerHTML = "<h3>Resultado</h3> <br> Águia: " +aguia*4+ "%" +"<br>Tubarão: " +tubarao*4+"% " + "<br>Gato: " +gato*4 +"%"+ "<br>Lobo: " +lobo*4 +"%" + '<br><img src="Imagem1.png" alt="resultados perfil comportamental">'
             
             
          
