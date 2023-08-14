@@ -10,7 +10,33 @@
 <body>
     <h1>Teste de perfil comportamental</h1>
     <p>Por favor, responda as seguintes perguntas:</p>
-    <form id="questionario" onsubmit="return false;">
+    <form id="questionario" onsubmit="return false;" action="perfil.php" method="post">
+      <label for="nome">Nome Completo</label>
+      <input type="text" name="nome" id="nome" placeholder="Nome Completo" required> <br>
+      <label for="email">E-Mail Institucional</label>
+      <input type="email" name="email" id="email" placeholder="E-Mail Institucional" required> <br>
+      <label for="curso">Curso</label>
+      <select id="curso" name="curso" required>
+        <option value="" selected disabled>Selecione uma opção</option>
+        <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+        <option value="ams-ads">AMS - Análise e Desenvolvimento de Sistemas</option>  
+        <option value="comex">Comércio Exterior</option> 
+        <option value="dsm">Desenvolvimento de Software Multiplataforma</option> 
+        <option value="dpp">Desenvolvimento de Produtos Plásticos</option> 
+        <option value="ge">Gestão Empresarial</option>
+        <option value="grh">Gestão de Recursos Humanos</option>
+        <option value="log">Logística</option>
+        <option value="pol">Polímeros</option>
+      </select>
+      <br>
+      <label for="periodo">Período</label>
+      <select id="periodo" name="periodo" required>
+        <option value="" selected disabled>Selecione uma opção</option>
+        <option value="manhã">Manhã</option>
+        <option value="tarde">Tarde</option>
+        <option value="noite">Noite</option>  
+      </select>
+      <br>
       <label for="pergunta1">1. Eu sou...</label>
       <select id="pergunta1" required>
         <option value="" selected disabled>Selecione uma opção</option>
@@ -237,9 +263,12 @@
         <option value="a">A - Se você não tem condições de competir, não compita</option>
       </select>
       <br>
-      <button onclick="avaliar()">Avaliar</button>
+      <button type="submit" onclick="avaliar()">Avaliar</button>
+     
     </form>
-    <div id="resultado"></div>
+    <div id="resultado">
+      
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
