@@ -55,13 +55,10 @@ form {
     background-color: #45a049;
   }
   
-  #resultado{
-    padding: 4%;
-    background-color: #d4d4d4;
-    border: #000 solid 1px;
-    font-size: 1.2em;
-    font-weight: bold;
-   }
-   
+  img{
+    width: 60%;
+    height: auto;
+    filter: contrast(50);
+  }
   
   

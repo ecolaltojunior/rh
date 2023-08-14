@@ -4,10 +4,10 @@ function avaliar() {
     const opt = form.querySelectorAll("option")
   
     
-    var aguia = 0
-    var lobo = 0
-    var gato = 0
-    var tubarao = 0
+    let aguia = 0
+    let lobo = 0
+    let gato = 0
+    let tubarao = 0
     
     
     
@@ -35,10 +35,9 @@ function avaliar() {
                
     }
     
-         
-            resultado.innerHTML = "<h3>Resultado</h3> <br> Águia: " +aguia*4+ "%" +"<br>Tubarão: " +tubarao*4+"% " + "<br>Gato: " +gato*4 +"%"+ "<br>Lobo: " +lobo*4 +"%" + '<br><img src="Imagem1.png" alt="resultados perfil comportamental"><br>'
+    resultado.innerHTML = "<h3>Resultado</h3> <br> Águia: " +aguia*4+ "%" +"<br>Tubarão: " +tubarao*4+"% " + "<br>Gato: " +gato*4 +"%"+ "<br>Lobo: " +lobo*4 +"%" + '<br><img src="Imagem1.png" alt="resultados perfil comportamental"><br>'
             
-            
+       
 }
 
 
