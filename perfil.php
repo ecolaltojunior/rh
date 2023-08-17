@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $inserir = $conexao->prepare($cadastrar);
     $inserir->execute();
 
-    echo '<img src="Imagem1.png" alt="resultados perfil comportamental">'
+    echo '<img src="resultado.png" alt="resultados perfil comportamental">'
 ?>
 </div>
 </body>
