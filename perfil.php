@@ -32,17 +32,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
     echo "<h1>Resultado:</h1>";
-    echo '<p>Seu perfil comportamental é: </p>';
-    echo "Águia: " .$count_i *4; echo'%'; echo '<br>';
-    echo "Gato: " .$count_c *4; echo '%'; echo "<br>";
-    echo "Tubarão: " .$count_a *4; echo '%'; echo "<br>";
-    echo "Lobo: " .$count_o *4; echo'%'; echo "<br>";
+    echo '<h2>Seu perfil comportamental é: </h2>';
+    echo "<p>Águia: " .$count_i *4; echo'%'; echo '</p>';
+    echo "<p>Gato: " .$count_c *4; echo '%'; echo "</p>";
+    echo "<p>Tubarão: " .$count_a *4; echo '%'; echo "</p>";
+    echo "<p>Lobo: " .$count_o *4; echo'%'; echo "</p>";
 
     $cadastrar = 'insert into perfil (nome, email, curso, periodo, i, c, a, o) values ("'.$nome.'","'.$email.'", "'.$curso.'", "'.$periodo.'", "'.$count_i.'", "'.$count_c.'", "'.$count_a.'", "'.$count_o.'")';
     $inserir = $conexao->prepare($cadastrar);
     $inserir->execute();
 
-    echo '<img src="resultado.png" alt="resultados perfil comportamental">'
+    echo '<img src="resultado.png" alt="resultados perfil comportamental">';
+    echo '<a class="link" href="index.html">Finalizar</a>';
 ?>
 </div>
 </body>
