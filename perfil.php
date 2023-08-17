@@ -7,7 +7,7 @@
     <title>Teste de perfil comportamental</title>
 </head>
 <body>
-    
+<div class="flex-container"> 
 <?php 
     
     require ('conexao.php');
@@ -44,5 +44,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     echo '<img src="Imagem1.png" alt="resultados perfil comportamental">'
 ?>
+</div>
 </body>
 </html>
