@@ -51,6 +51,7 @@
             <th>Nome</th>
             <th>E-Mail</th>
             <th>Curso</th>
+            <th>Semestre</th>
             <th>Período</th>
             <th>i</th>
             <th>c</th>
