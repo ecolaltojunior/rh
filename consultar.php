@@ -64,6 +64,7 @@
             echo "<td>" . $row['nome'] . "</td>";
             echo "<td>" . $row['email'] . "</td>";
             echo "<td>" . $row['curso'] . "</td>";
+            echo "<td>" . $row['semestre'] . "</td>";
             echo "<td>" . $row['periodo'] . "</td>";
             echo "<td>" . $row['i'] . "</td>";
             echo "<td>" . $row['c'] . "</td>";
