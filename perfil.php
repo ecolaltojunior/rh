@@ -16,6 +16,7 @@
     $id_genero = $_POST['id_genero'];
     $email = $_POST['email'];
     $curso = $_POST['curso'];
+    $semestre = $_POST['semestre'];
     $periodo = $_POST['periodo'];
     $count_i = 0;
     $count_c = 0;
@@ -40,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     echo "<p>Tubarão: " .$count_a *4; echo '%'; echo "</p>";
     echo "<p>Lobo: " .$count_o *4; echo'%'; echo "</p>";
 
-    $cadastrar = 'insert into perfil (nome, faixa_etaria, id_genero, email, curso, periodo, i, c, a, o) values ("'.$nome.'", "'.$faixa_etaria.'", "'.$id_genero.'", "'.$email.'", "'.$curso.'", "'.$periodo.'", "'.$count_i.'", "'.$count_c.'", "'.$count_a.'", "'.$count_o.'")';
+    $cadastrar = 'insert into perfil (nome, faixa_etaria, id_genero, email, curso, periodo, i, c, a, o) values ("'.$nome.'", "'.$faixa_etaria.'", "'.$id_genero.'", "'.$email.'", "'.$curso.'", "'.$periodo.'", "'.$semestre.'","'.$count_i.'", "'.$count_c.'", "'.$count_a.'", "'.$count_o.'")';
     $inserir = $conexao->prepare($cadastrar);
     $inserir->execute();
 
