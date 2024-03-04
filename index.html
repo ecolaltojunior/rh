@@ -14,6 +14,19 @@
     <form id="questionario" action="perfil.php" method="post">
       <label for="nome">Nome Completo</label>
       <input type="text" name="nome" id="nome" placeholder="Nome Completo" required> <br>
+      <label for="faixa_etaria">Faixa etária</label>
+      <select name="faixa_etaria" id="faixa_etaria" required> 
+        <option value="" selected disabled>Selecione uma opção</option>
+        <option value="até 19 anos">Até 19 anos</option>
+        <option value="20 até 29 anos">De 20 até 29 anos</option>
+        <option value="30 até 39 anos">De 30 até 39 anos</option>
+        <option value="40 até 49 anos">De 40 até 49 anos</option>
+        <option value="50 até 59 anos">De 50 até 59 anos</option>
+        <option value="60 até 69 anos">De 60 até 69 anos</option>
+        <option value="acima de 70 anos">Acima de 70 anos</option>
+      </select><br>
+      <label for="id_genero">Identificação de gênero</label>
+      <input type="text" name="id_genero" id="id_genero" placeholder="Identificação de gênero" required><br>
       <label for="email">E-Mail Institucional</label>
       <input type="email" name="email" id="email" placeholder="E-Mail Institucional" required> <br>
       <label for="curso">Curso</label>

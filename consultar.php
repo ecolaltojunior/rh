@@ -50,6 +50,8 @@
     <table border="1">
         <tr>
             <th>Nome</th>
+            <th>Faixa etária</th>
+            <th>Identificação de gênero</th>
             <th>E-Mail</th>
             <th>Curso</th>
             <th>Semestre</th>
@@ -64,6 +66,8 @@
         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
             echo "<tr>";
             echo "<td>" . $row['nome'] . "</td>";
+            echo "<td>" . $row['faixa_etaria'] . "</td>";
+            echo "<td>" . $row['id_genero'] . "</td>";
             echo "<td>" . $row['email'] . "</td>";
             echo "<td>" . $row['curso'] . "</td>";
             echo "<td>" . $row['semestre'] . "</td>";
